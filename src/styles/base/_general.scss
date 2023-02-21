@@ -1,0 +1,20 @@
+html {
+    font-size: 14px;
+    line-height: 1.7;
+
+    font-family: $font-primary;
+
+    letter-spacing: 0.1em;
+    // overflow: hidden;
+
+    max-width: 321px;
+}
+
+.container {
+    max-width: 321px;
+}
+
+a {
+    color: inherit;
+    font-family: inherit;
+}

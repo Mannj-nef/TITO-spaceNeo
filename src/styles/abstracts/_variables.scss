@@ -1,0 +1,17 @@
+// Font family
+$font-primary: "Open Sans";
+$font-secondary: "Anton";
+$font-third: "Open Sans Condensed";
+
+// Breakpoints
+$breakpoints-md: 768px;
+$breakpoints-lg: 1024px;
+
+$tablet: calc($breakpoints-lg - 0.2px);
+
+// colors
+$while-color: #fff;
+$black-color: #000;
+$bg-blur: rgba(255, 255, 255, 0.01);
+$bg-thumbanails: #f1f1f1;
+$orange-color: #ff9568;

@@ -1,0 +1,77 @@
+.home-banner {
+    position: relative;
+    width: 100%;
+    color: $while-color;
+}
+.banner-infor {
+    position: absolute;
+    top: 120px;
+
+    padding: 0 13px;
+
+    .banner-infor-sub-title,
+    .banner-infor-title,
+    .banner-infor-link,
+    .banner-infor-button {
+        text-transform: uppercase;
+    }
+
+    .banner-infor-sub-title {
+        font-size: 44px;
+        line-height: 1.13;
+        font-weight: 400;
+        margin-bottom: 17px;
+        padding-right: 50px;
+        letter-spacing: 0.1em;
+    }
+    .banner-infor-title {
+        font-family: $font-secondary;
+        font-size: 62px;
+        line-height: 1.16;
+        margin-bottom: 17px;
+    }
+    .banner-infor-link {
+        font-weight: 700;
+        display: inline-block;
+        margin-bottom: 34px;
+        line-height: 1.35;
+    }
+    .banner-infor-button {
+        color: $while-color;
+        line-height: 1.35;
+        font-weight: 700;
+        padding: 25px 33px;
+        letter-spacing: 0.1em;
+    }
+}
+.home-banner:first-child {
+    @include bg-image("../assets/images/Sec-1-BG.png", 733px);
+}
+.home-banner:nth-child(2) {
+    @include bg-image("../assets/images/Sec-2-BG.png", 608px);
+}
+.home-banner:last-child {
+    padding-bottom: 600px;
+    background-color: $black-color;
+
+    .banner-image {
+        @include bg-image("../assets/images/Sec-3-BG.png", 794px);
+    }
+    .banner-infor {
+        top: auto;
+        bottom: 0;
+
+        padding-top: 67px;
+        padding-bottom: 69px;
+        background: rgba(25, 65, 106, 0.5);
+        backdrop-filter: blur(22px);
+        .banner-infor-desc {
+            margin: 33px 0 49px;
+            font-weight: 600;
+            line-height: 1.7;
+        }
+        .banner-infor-button {
+            padding: 25px 54px;
+        }
+    }
+}

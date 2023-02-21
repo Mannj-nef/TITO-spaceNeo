@@ -1,0 +1,46 @@
+.header {
+    position: fixed;
+    top: 24px;
+    left: 0;
+    right: 0;
+
+    background-color: $bg-blur;
+    backdrop-filter: blur(30px);
+
+    z-index: 50;
+
+    &-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 22px 14px;
+    }
+
+    &-logo {
+        max-width: 152px;
+        img {
+            @include image-full();
+        }
+    }
+
+    &-navigate {
+        .navigate-menu {
+            // display: none;
+            width: 32px;
+            height: 17px;
+            img {
+                @include image-full();
+            }
+        }
+        .navigate-list {
+            display: flex;
+            column-gap: 16px;
+            display: none;
+        }
+        .navigate-link {
+            display: inline-block;
+            padding: 15px;
+        }
+    }
+}
