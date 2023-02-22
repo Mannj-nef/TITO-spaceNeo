@@ -11,3 +11,24 @@
     height: 100%;
     object-fit: cover;
 }
+
+@mixin textLineClamp($line: 2) {
+    -webkit-line-clamp: $line;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+@mixin screen($min-width, $max-width: "false") {
+    @if $min-width {
+        @media screen and (max-width: $max-width) and (min-width: $min-width) {
+            @content;
+        }
+    }
+    @media screen and (min-width: $min-width) {
+        @content;
+    }
+}

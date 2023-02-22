@@ -1,12 +1,11 @@
 .home-banner {
     position: relative;
-    width: 100%;
+    // width: 100%;
     color: $while-color;
 }
 .banner-infor {
     position: absolute;
     top: 120px;
-
     padding: 0 13px;
 
     .banner-infor-sub-title,
@@ -44,6 +43,9 @@
         letter-spacing: 0.1em;
     }
 }
+.text-banner-image {
+    display: none;
+}
 .home-banner:first-child {
     @include bg-image("../assets/images/Sec-1-BG.png", 733px);
 }
@@ -55,6 +57,7 @@
     background-color: $black-color;
 
     .banner-image {
+        position: relative;
         @include bg-image("../assets/images/Sec-3-BG.png", 794px);
     }
     .banner-infor {
@@ -63,6 +66,7 @@
 
         padding-top: 67px;
         padding-bottom: 69px;
+
         background: rgba(25, 65, 106, 0.5);
         backdrop-filter: blur(22px);
         .banner-infor-desc {
@@ -72,6 +76,92 @@
         }
         .banner-infor-button {
             padding: 25px 54px;
+        }
+    }
+}
+
+@include screen(600px) {
+    .home-banner:not(:last-child) {
+        .banner-infor {
+            font-size: 18px;
+
+            .banner-infor-sub-title {
+                font-size: 64px;
+            }
+            .banner-infor-title {
+                font-size: 92px;
+                line-height: 1.5;
+            }
+            .banner-infor-button {
+                padding: 25px 43px;
+            }
+        }
+    }
+    .home-banner:last-child {
+        .banner-infor {
+            bottom: initial;
+        }
+    }
+
+    .text-banner-image {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        opacity: 0.3;
+        img {
+            @include image-full();
+        }
+    }
+}
+
+@include screen(600px, 1321.08px) {
+    .banner-infor {
+        top: 263px;
+        padding: 0 37px;
+    }
+    .home-banner:first-child {
+        @include bg-image("../assets/images/Sec-1-BG-md.png", 1096px);
+    }
+    .home-banner:nth-child(2) {
+        @include bg-image("../assets/images/Sec-2-BG-md.png", 866px);
+    }
+    .home-banner:last-child {
+        padding: 0;
+        .banner-infor {
+            --padding: 50px;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+
+            padding-left: var(--padding);
+            padding-right: var(--padding);
+
+            width: 448px;
+        }
+        .banner-image {
+            @include bg-image("../assets/images/Sec-3-BG-md.png", 794px);
+        }
+    }
+}
+@include screen(1320px) {
+    .banner-infor {
+        padding: 0 37px;
+    }
+    .home-banner:first-child {
+        @include bg-image("../assets/images/Sec-1-BG-lg.png", 1096px);
+    }
+    .home-banner:nth-child(2) {
+        @include bg-image("../assets/images/Sec-2-BG-lg.png", 866px);
+    }
+    .home-banner:last-child {
+        padding: 124px;
+        .banner-image {
+            @include bg-image("../assets/images/Sec-3-BG-lg.png", 794px);
+        }
+        .banner-infor {
+            left: 50%;
         }
     }
 }

@@ -17,6 +17,11 @@
             @include image-full();
         }
     }
+    &-wrapp-link {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
     &-nav {
         &-list {
             display: flex;
@@ -31,5 +36,28 @@
     .copyright {
         // font-family: $font-third;
         font-weight: 300;
+        display: inline-block;
+    }
+    @include screen(768px) {
+        &-nav-list {
+            gap: 40px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    @include screen(768px, 1321.08px) {
+        gap: 40px;
+        padding-left: 38px;
+        padding-right: 83px;
+    }
+    @include screen(1320px) {
+        padding: 89px 124px;
+        flex-direction: row;
+        gap: 50px;
+        justify-content: space-between;
+        &-wrapp-link {
+            gap: 50px;
+            flex-direction: row;
+        }
     }
 }
