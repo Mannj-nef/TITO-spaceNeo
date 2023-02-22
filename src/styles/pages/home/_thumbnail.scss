@@ -66,9 +66,13 @@
             .thumbnail-content {
                 padding: 27px 38px;
             }
+            .thumbnail-button {
+                padding: 25px 0;
+                font-size: 18px;
+            }
         }
     }
-    @include screen(768px, 1022.08px) {
+    @include screen(768px, 1378.08px) {
         grid-template-columns: repeat(2, 1fr);
         .thumbnail-item:last-child {
             padding: 26px;
@@ -78,7 +82,8 @@
             grid-row: 1 / 2;
         }
     }
-    @include screen(1023px) {
+    @include screen(1380px) {
+        padding: 107px 126px 70px;
         grid-template-columns: repeat(3, 1fr);
         .thumbnail-item:last-child {
             box-shadow: none;

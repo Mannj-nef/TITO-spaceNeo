@@ -148,6 +148,8 @@
 @include screen(1320px) {
     .banner-infor {
         padding: 0 37px;
+        top: 298px;
+        left: 98px;
     }
     .home-banner:first-child {
         @include bg-image("../assets/images/Sec-1-BG-lg.png", 1096px);

@@ -3,9 +3,8 @@
     top: 24px;
     left: 0;
     right: 0;
-
+    color: $while-color;
     background-color: $bg-blur;
-
     z-index: 50;
 
     .bg-blur {
@@ -53,11 +52,16 @@
             display: inline-block;
             letter-spacing: 0.1em;
             padding: 15px;
-            color: $while-color;
+            color: currentColor;
             text-decoration: none;
         }
     }
 
+    @include screen(768px) {
+        --position: 18px;
+        left: var(--position);
+        right: var(--position);
+    }
     @include screen(1320px) {
         --position: 76px;
         left: var(--position);
@@ -74,4 +78,11 @@
             }
         }
     }
+}
+
+.header-active {
+    background-color: $while-color;
+    color: $black-color;
+    box-shadow: $shadow;
+    transition: 0.5s ease-in;
 }
