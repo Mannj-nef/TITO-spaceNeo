@@ -100,6 +100,9 @@
     .home-banner:last-child {
         .banner-infor {
             bottom: initial;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 448px;
         }
     }
 
@@ -116,7 +119,7 @@
     }
 }
 
-@include screen(600px, 1321.08px) {
+@include screen(600px, 1319.08px) {
     .banner-infor {
         top: 263px;
         padding: 0 37px;
@@ -132,13 +135,9 @@
         .banner-infor {
             --padding: 50px;
             right: 0;
-            top: 50%;
-            transform: translateY(-50%);
 
             padding-left: var(--padding);
             padding-right: var(--padding);
-
-            width: 448px;
         }
         .banner-image {
             @include bg-image("../assets/images/Sec-3-BG-md.png", 794px);
