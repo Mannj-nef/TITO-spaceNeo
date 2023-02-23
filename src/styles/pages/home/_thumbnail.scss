@@ -48,6 +48,7 @@
             @include textLineClamp(9);
         }
         .thumbnail-button {
+            color: $black-color;
             padding: 25px;
             letter-spacing: 0.07em;
             line-height: 1.3;
