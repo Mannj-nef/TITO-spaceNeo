@@ -22,13 +22,14 @@
     word-break: break-word;
 }
 
-@mixin screen($min-width, $max-width: "false") {
-    @if $min-width {
-        @media screen and (max-width: $max-width) and (min-width: $min-width) {
+@mixin screen($min-width, $max-width: 0) {
+    @if $max-width != 0 {
+        @media screen and (min-width: $min-width) and (max-width: $max-width) {
             @content;
         }
-    }
-    @media screen and (min-width: $min-width) {
-        @content;
+    } @else {
+        @media screen and (min-width: $min-width) {
+            @content;
+        }
     }
 }
