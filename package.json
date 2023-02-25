@@ -4,8 +4,7 @@
   "description": "learn html5, css3 width landing page SpaceNeo",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html",
-    "deploy": "rm -rf dist/ && npm run build && gh-pages -d dist"
+    "build": "parcel build index.html"
   },
   "homepage": "https://Mannj-nef.github.io/TITO-training-spaceNeo",
   "keywords": [],
@@ -18,8 +17,5 @@
     "posthtml-include": "^1.7.4",
     "posthtml-modules": "^0.9.0",
     "sass": "^1.58.2"
-  },
-  "dependencies": {
-    "gh-pages": "^5.0.0"
   }
 }
