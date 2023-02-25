@@ -1,6 +1,6 @@
-@import "./abstracts/";
-@import "./base/";
+@forward "./abstracts/";
+@forward "./base/";
 
-@import "./components/";
-@import "./layouts/";
-@import "./pages/";
+@forward "./components/";
+@forward "./layouts/";
+@forward "./pages/";
