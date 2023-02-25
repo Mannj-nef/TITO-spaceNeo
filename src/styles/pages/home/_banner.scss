@@ -47,10 +47,10 @@
     display: none;
 }
 .home-banner:first-child {
-    @include bg-image("../assets/images/Sec-1-BG.png", 733px);
+    @include bg-image("../assets/images/Sec-rocket-launcher-BG.png", 733px);
 }
 .home-banner:nth-child(2) {
-    @include bg-image("../assets/images/Sec-2-BG.png", 608px);
+    @include bg-image("../assets/images/Sec-rocket-BG.png", 608px);
 }
 .home-banner:last-child {
     padding-bottom: 600px;
@@ -58,7 +58,7 @@
 
     .banner-image {
         position: relative;
-        @include bg-image("../assets/images/Sec-3-BG.png", 794px);
+        @include bg-image("../assets/images/Sec-rocket-launched-BG.png", 794px);
     }
     .banner-infor {
         top: auto;
@@ -125,10 +125,10 @@
         padding: 0 37px;
     }
     .home-banner:first-child {
-        @include bg-image("../assets/images/Sec-1-BG-md.png", 1096px);
+        @include bg-image("../assets/images/Sec-rocket-launcher-BG-md.png", 1096px);
     }
     .home-banner:nth-child(2) {
-        @include bg-image("../assets/images/Sec-2-BG-md.png", 866px);
+        @include bg-image("../assets/images/Sec-rocket-BG-md.png", 866px);
     }
     .home-banner:last-child {
         padding: 0;
@@ -140,7 +140,7 @@
             padding-right: var(--padding);
         }
         .banner-image {
-            @include bg-image("../assets/images/Sec-3-BG-md.png", 794px);
+            @include bg-image("../assets/images/Sec-rocket-launched-md.png", 794px);
         }
     }
 }
@@ -151,15 +151,15 @@
         left: 98px;
     }
     .home-banner:first-child {
-        @include bg-image("../assets/images/Sec-1-BG-lg.png", 1096px);
+        @include bg-image("../assets/images/Sec-rocket-launcher-BG-lg.png", 1096px);
     }
     .home-banner:nth-child(2) {
-        @include bg-image("../assets/images/Sec-2-BG-lg.png", 866px);
+        @include bg-image("../assets/images/Sec-rocket-BG-lg.png", 866px);
     }
     .home-banner:last-child {
         padding: 124px;
         .banner-image {
-            @include bg-image("../assets/images/Sec-3-BG-lg.png", 794px);
+            @include bg-image("../assets/images/Sec-rocket-launched-BG-lg.png", 794px);
         }
         .banner-infor {
             left: 50%;
