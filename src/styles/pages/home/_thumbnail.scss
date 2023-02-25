@@ -72,15 +72,15 @@
                 font-size: 18px;
             }
         }
+        .thumbnail-item:nth-child(3) {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
     }
     @include screen(768px, 1378.08px) {
         grid-template-columns: repeat(2, 1fr);
         .thumbnail-item:last-child {
             padding: 26px;
-        }
-        .thumbnail-item:nth-child(3) {
-            grid-column: 2 / 3;
-            grid-row: 1 / 2;
         }
     }
     @include screen(1380px) {
