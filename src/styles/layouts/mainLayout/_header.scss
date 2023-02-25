@@ -1,5 +1,6 @@
 .header {
-    position: fixed;
+    // position: fixed;
+    position: absolute;
     top: 24px;
     left: 0;
     right: 0;
@@ -54,6 +55,10 @@
             padding: 15px;
             color: currentColor;
             text-decoration: none;
+            transition: all 0.3s;
+        }
+        .navigate-link:hover {
+            color: $black-color;
         }
     }
 

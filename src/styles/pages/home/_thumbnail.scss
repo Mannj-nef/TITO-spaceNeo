@@ -55,6 +55,12 @@
             font-weight: 700;
             width: 100%;
         }
+        .thumbnail-button:hover {
+            color: $while-color;
+        }
+        .thumbnail-button::before {
+            background-color: $black-color;
+        }
     }
 
     @include screen(768px) {
