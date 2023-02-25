@@ -1,6 +1,4 @@
 // @import "./homePage";
-.home-main {
-    @import "./banner";
-    @import "./thumbnail";
-    @import "./faq";
-}
+@forward "./banner";
+@forward "./thumbnail";
+@forward "./faq";

@@ -1,6 +1,6 @@
-@import "./abstracts/";
-@import "./base/";
+@use "./abstracts/" as *;
+@use "./base/" as *;
 
-@import "./components/";
-@import "./layouts/";
-@import "./pages/";
+@use "./components/" as *;
+@use "./layouts/" as *;
+@use "./pages/" as *;
