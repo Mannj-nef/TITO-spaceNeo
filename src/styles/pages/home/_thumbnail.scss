@@ -8,6 +8,8 @@
     background-color: $bg-thumbanails;
 
     .thumbnail-item {
+        cursor: pointer;
+        position: relative;
         box-shadow: $shadow;
         display: flex;
         justify-content: center;
@@ -55,6 +57,16 @@
             font-weight: 700;
             width: 100%;
         }
+        .thumbnail-button:hover {
+            color: $while-color;
+        }
+        .thumbnail-button::before {
+            background-color: $black-color;
+        }
+    }
+    .thumbnail-item:hover {
+        top: -1px;
+        box-shadow: $hadow-horver;
     }
 
     @include screen(768px) {

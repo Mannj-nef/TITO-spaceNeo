@@ -3,4 +3,32 @@
     background-color: transparent;
     border: 4px solid currentColor;
     color: transparent;
+    display: inline-block;
+
+    //
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+    z-index: 1;
+
+    &:hover {
+        color: currentColor;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -50px;
+        width: 150%;
+        height: 100%;
+        background-color: $while-color;
+        transform: scaleX(0) skewX(35deg);
+        transform-origin: left;
+        z-index: -1;
+        transition: transform 1s;
+    }
+
+    &:hover::before {
+        transform: scaleX(1) skewX(35deg);
+    }
 }

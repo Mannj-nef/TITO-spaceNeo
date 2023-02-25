@@ -42,6 +42,13 @@
         padding: 25px 33px;
         letter-spacing: 0.1em;
     }
+    .banner-infor-button:hover {
+        color: $while-color;
+        border: 4px solid $black-color;
+    }
+    .banner-infor-button::before {
+        background-color: $black-color;
+    }
 }
 .text-banner-image {
     display: none;
