@@ -1,8 +1,7 @@
 @use "../../abstracts/" as *;
 
 .header {
-    // position: fixed;
-    position: absolute;
+    position: fixed;
     top: 24px;
     left: 0;
     right: 0;

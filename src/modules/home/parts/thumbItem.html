@@ -1,14 +1,16 @@
 <div class="thumbnail-item">
   <div class="thumbnail-image">
-    <include
-      src="./components/picture.html"
-      locals='{
-        "imageLg": "{{imageLg}}",
-        "imageMd": "{{imageMd}}",
-        "image": "{{image}}",
-        "alt": "{{alt}}"
-    }'
-    />
+    <div class="thumbnail-wrapp-image">
+      <include
+        src="./components/picture.html"
+        locals='{
+          "imageLg": "{{imageLg}}",
+          "imageMd": "{{imageMd}}",
+          "image": "{{image}}",
+          "alt": "{{alt}}"
+      }'
+      />
+    </div>
     <div class="thumbnail-date">{{date}}</div>
   </div>
   <div class="thumbnail-content">
