@@ -63,7 +63,7 @@
         }
     }
 
-    @include screen(319px, 1319px) {
+    @include screen($breakpoints-xs, $tablet) {
         .menu-overlay {
             position: fixed;
             top: 0;
@@ -87,12 +87,12 @@
         }
     }
 
-    @include screen(768px, 1319.08px) {
+    @include screen($breakpoints-md, $tablet) {
         --position: 18px;
         left: var(--position);
         right: var(--position);
     }
-    @include screen(1320px) {
+    @include screen($breakpoints-xl) {
         --position: 76px;
         left: var(--position);
         right: var(--position);

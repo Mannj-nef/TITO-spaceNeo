@@ -4,10 +4,13 @@ $font-secondary: "Anton";
 $font-third: "Open Sans Condensed";
 
 // Breakpoints
+$breakpoints-xs: 319.08px;
+$breakpoints-sm: 600px;
 $breakpoints-md: 768px;
 $breakpoints-lg: 1024px;
+$breakpoints-xl: 1320px;
 
-$tablet: calc($breakpoints-lg - 0.2px);
+$tablet: calc($breakpoints-xl - 0.2px);
 
 // colors
 $primary-color: #fff;
