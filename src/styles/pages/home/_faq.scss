@@ -33,15 +33,15 @@
             line-height: 1.7;
         }
     }
-    @include screen(768px) {
+    @include screen($breakpoints-md) {
         padding: 0;
     }
-    @include screen(768px, 1319.08px) {
+    @include screen($breakpoints-md, $tablet) {
         .faq-content {
             padding: 0 43px 127px;
         }
     }
-    @include screen(1320px) {
+    @include screen($breakpoints-xl) {
         .faq-content {
             padding: 0 126px 137px;
         }

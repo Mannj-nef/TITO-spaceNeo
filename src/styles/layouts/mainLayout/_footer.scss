@@ -40,19 +40,19 @@
         font-weight: 300;
         display: inline-block;
     }
-    @include screen(768px) {
+    @include screen($breakpoints-md) {
         &-nav-list {
             gap: 40px;
             flex-direction: row;
             justify-content: space-between;
         }
     }
-    @include screen(768px, 1321.08px) {
+    @include screen($breakpoints-md, $tablet) {
         gap: 40px;
         padding-left: 38px;
         padding-right: 83px;
     }
-    @include screen(1320px) {
+    @include screen($breakpoints-xl) {
         padding: 89px 124px;
         flex-direction: row;
         gap: 50px;
