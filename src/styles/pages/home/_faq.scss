@@ -1,9 +1,9 @@
 @use "../../abstracts/" as *;
 
 .home-faq {
-    background-color: $black-color;
+    background-color: $secondary-color;
     padding: 58px 0 67px;
-    color: $while-color;
+    color: $primary-color;
     .faq-image {
         img {
             @include image-full();
@@ -36,7 +36,7 @@
     @include screen(768px) {
         padding: 0;
     }
-    @include screen(768px, 1321.08px) {
+    @include screen(768px, 1319.08px) {
         .faq-content {
             padding: 0 43px 127px;
         }

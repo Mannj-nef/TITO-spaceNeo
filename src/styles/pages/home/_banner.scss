@@ -3,7 +3,7 @@
 .home-banner {
     position: relative;
     // width: 100%;
-    color: $while-color;
+    color: $primary-color;
 }
 .banner-infor {
     position: absolute;
@@ -38,18 +38,18 @@
         line-height: 1.35;
     }
     .banner-infor-button {
-        color: $while-color;
+        color: $primary-color;
         line-height: 1.35;
         font-weight: 700;
         padding: 25px 33px;
         letter-spacing: 0.1em;
     }
     .banner-infor-button:hover {
-        color: $while-color;
-        border: 4px solid $black-color;
+        color: $primary-color;
+        border: 4px solid $secondary-color;
     }
     .banner-infor-button::before {
-        background-color: $black-color;
+        background-color: $secondary-color;
     }
 }
 .text-banner-image {
@@ -63,7 +63,7 @@
 }
 .home-banner:last-child {
     padding-bottom: 600px;
-    background-color: $black-color;
+    background-color: $secondary-color;
 
     .banner-image {
         position: relative;

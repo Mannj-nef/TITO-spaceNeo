@@ -5,7 +5,7 @@
     top: 24px;
     left: 0;
     right: 0;
-    color: $while-color;
+    color: $primary-color;
     background-color: $bg-blur;
     z-index: 50;
 
@@ -59,7 +59,7 @@
             transition: all 0.3s;
         }
         .navigate-link:hover {
-            color: $black-color;
+            color: $secondary-color;
         }
     }
 
@@ -70,7 +70,7 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background: $black-color;
+            background: $secondary-color;
             opacity: 0.4;
         }
         .navigate-list-active {
@@ -82,8 +82,8 @@
             left: 40%;
             top: 0;
             bottom: 0;
-            background-color: $black-color;
-            color: $while-color;
+            background-color: $secondary-color;
+            color: $primary-color;
         }
     }
 
@@ -118,8 +118,8 @@
 
 .header-active {
     top: 0;
-    background-color: $while-color;
-    color: $black-color;
+    background-color: $primary-color;
+    color: $secondary-color;
     box-shadow: $shadow;
     transition: 0.5s ease-in;
 }
