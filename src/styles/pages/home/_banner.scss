@@ -18,7 +18,7 @@
     }
 
     &-sub-title {
-        font-size: 44px;
+        font-size: $text-4xl;
         line-height: 1.13;
         font-weight: 400;
         margin-bottom: 17px;
@@ -27,7 +27,7 @@
     }
     &-title {
         font-family: $font-secondary;
-        font-size: 62px;
+        font-size: $text-3xl;
         line-height: 1.16;
         margin-bottom: 17px;
     }
@@ -92,13 +92,13 @@
 @include screen($breakpoints-sm) {
     .home-banner:not(:last-child) {
         .banner-infor {
-            font-size: 18px;
+            font-size: $text-lg;
 
             &-sub-title {
-                font-size: 64px;
+                font-size: $text-4xl;
             }
             &-title {
-                font-size: 92px;
+                font-size: $text-5xl;
                 line-height: 1.5;
             }
             &-button {
