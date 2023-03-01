@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 
 html {
-    font-size: 14px;
+    font-size: $text-base;
     line-height: 1.7;
 
     font-family: $font-primary;

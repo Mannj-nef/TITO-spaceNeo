@@ -18,11 +18,11 @@
         gap: 54px;
         .faq-title {
             font-family: $font-secondary;
-            font-size: 64px;
+            font-size: $text-4xl;
             line-height: 1.5;
         }
         .faq-sub-title {
-            font-size: 22px;
+            font-size: $text-xl;
             padding-right: 80px;
             line-height: 1.3;
             text-transform: uppercase;
